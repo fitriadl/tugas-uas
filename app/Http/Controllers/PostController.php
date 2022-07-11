@@ -105,4 +105,9 @@ class PostController extends Controller
         $post->delete();
         return back();
     }
+    public function dashboard()
+    {
+        $post = Post::all();
+        return view('dashboard', compact('post'));
+    }
 }

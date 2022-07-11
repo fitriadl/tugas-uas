@@ -24,6 +24,6 @@ class HomeController extends Controller
     public function index()
     {
         $post = Post::all();
-        return view('dashboard', compact('post'));
+        return view('frontend', compact('post'));
     }
 }
